@@ -30,6 +30,7 @@ export default function Home() {
 
       setImageUrl(data.data[0].url);
     } catch (error) {
+      console.error('图片生成错误:', error);
       setError(error instanceof Error ? error.message : '生成图片时发生错误');
     } finally {
       setLoading(false);
