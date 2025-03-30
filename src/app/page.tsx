@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [prompt, setPrompt] = useState('');
@@ -28,8 +29,8 @@ export default function Home() {
       }
 
       setImageUrl(data.data[0].url);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : '生成图片时发生错误');
+    } catch (error) {
+      setError(error instanceof Error ? error.message : '生成图片时发生错误');
     } finally {
       setLoading(false);
     }
@@ -48,7 +49,7 @@ export default function Home() {
       a.click();
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
-    } catch (err) {
+    } catch (error) {
       setError('下载图片时发生错误');
     }
   };
@@ -88,11 +89,14 @@ export default function Home() {
 
         {imageUrl && (
           <div className="bg-gray-700 rounded-lg p-4">
-            <img
-              src={imageUrl}
-              alt="生成的图片"
-              className="w-full h-auto rounded-lg mb-4"
-            />
+            <div className="relative w-full h-[512px] mb-4">
+              <Image
+                src={imageUrl}
+                alt="生成的图片"
+                fill
+                className="rounded-lg object-contain"
+              />
+            </div>
             <button
               onClick={handleDownload}
               className="w-full py-3 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold transition-colors"
