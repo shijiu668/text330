@@ -95,6 +95,7 @@ export default function Home() {
                 src={imageUrl}
                 alt="生成的图片"
                 fill
+                unoptimized
                 className="rounded-lg object-contain"
               />
             </div>
