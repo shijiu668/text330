@@ -50,7 +50,7 @@ export default function Home() {
       a.click();
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
-    } catch (_) {
+    } catch {
       setError('下载图片时发生错误');
     }
   };
