@@ -133,8 +133,8 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-4">AI图片生成优势</h3>
-            <p className="text-gray-300">利用先进的AI技术，快速生成高质量图片。无需专业设计技能，也能创作出令人惊叹的视觉作品。</p>
+            <h3 className="text-xl font-semibold text-white mb-4">AI Image Generation Advantages</h3>
+            <p className="text-gray-300">Leverage advanced AI technology to quickly generate high-quality images. Create stunning visual works without professional design skills.</p>
           </div>
 
           <div className="bg-gradient-to-br from-pink-600/10 to-purple-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
@@ -143,8 +143,8 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-4">创意灵感激发</h3>
-            <p className="text-gray-300">突破创意瓶颈，获得无限灵感。AI助手帮助你探索新的视觉可能，激发创作潜能。</p>
+            <h3 className="text-xl font-semibold text-white mb-4">Creative Inspiration</h3>
+            <p className="text-gray-300">Break through creative blocks and gain unlimited inspiration. Let our AI assistant help you explore new visual possibilities and unlock your creative potential.</p>
           </div>
 
           <div className="bg-gradient-to-br from-blue-600/10 to-green-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
@@ -153,61 +153,61 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-4">商业应用场景</h3>
-            <p className="text-gray-300">为品牌营销、产品展示、社交媒体等商业场景提供高效的图片生成解决方案。</p>
+            <h3 className="text-xl font-semibold text-white mb-4">Business Applications</h3>
+            <p className="text-gray-300">Efficient image generation solutions for brand marketing, product showcases, social media, and various business scenarios.</p>
           </div>
         </div>
         <div className="mt-24 space-y-16">
           <section>
-            <h2 className="text-3xl font-bold text-white mb-8">如何使用</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">How to Use</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-indigo-600/10 to-purple-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">输入描述</h3>
-                <p className="text-gray-300">在输入框中详细描述您想要生成的图片内容，可以包含场景、风格、色彩等具体要求。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">Enter Description</h3>
+                <p className="text-gray-300">Describe your desired image in detail, including specific requirements for scene, style, colors, and other elements.</p>
               </div>
               <div className="bg-gradient-to-br from-purple-600/10 to-pink-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">选择风格</h3>
-                <p className="text-gray-300">从下拉菜单中选择合适的图片风格，可以选择自然写实或鲜艳风格，满足不同创作需求。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">Choose Style</h3>
+                <p className="text-gray-300">Select your preferred image style from the dropdown menu - choose between natural realistic or vivid styles to meet different creative needs.</p>
               </div>
               <div className="bg-gradient-to-br from-pink-600/10 to-red-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">一键生成</h3>
-                <p className="text-gray-300">点击生成按钮，AI将根据您的描述快速创作出独特的图片作品，支持下载保存。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">One-Click Generation</h3>
+                <p className="text-gray-300">Click the generate button, and AI will quickly create unique image artwork based on your description, with download support.</p>
               </div>
             </div>
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-white mb-8">生成效果</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">Generation Results</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-orange-600/10 to-yellow-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">高清画质</h3>
-                <p className="text-gray-300">生成的图片分辨率高达1024x1024像素，细节清晰，色彩饱满，适合各种使用场景。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">High Definition Quality</h3>
+                <p className="text-gray-300">Generated images boast a resolution of 1024x1024 pixels, with crisp details and rich colors, suitable for various use cases.</p>
               </div>
               <div className="bg-gradient-to-br from-yellow-600/10 to-green-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">风格多样</h3>
-                <p className="text-gray-300">支持多种艺术风格，从写实到抽象，从古典到现代，满足不同创作需求。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">Diverse Styles</h3>
+                <p className="text-gray-300">Support for multiple artistic styles, from realistic to abstract, classical to modern, meeting various creative requirements.</p>
               </div>
               <div className="bg-gradient-to-br from-green-600/10 to-teal-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">快速生成</h3>
-                <p className="text-gray-300">强大的AI引擎确保图片生成速度，让您的创意灵感快速变为现实。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">Rapid Generation</h3>
+                <p className="text-gray-300">Powerful AI engine ensures swift image generation, turning your creative ideas into reality quickly.</p>
               </div>
             </div>
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-white mb-8">为什么选择我们</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">Why Choose Us</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-teal-600/10 to-cyan-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">技术领先</h3>
-                <p className="text-gray-300">采用最新的DALL-E 3模型，确保生成图片的质量和创意性始终保持领先水平。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">Leading Technology</h3>
+                <p className="text-gray-300">Utilizing the latest DALL-E 3 model to ensure consistently superior image quality and creativity.</p>
               </div>
               <div className="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">简单易用</h3>
-                <p className="text-gray-300">直观的用户界面设计，无需复杂操作，人人都能轻松创作出专业级图片。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">User-Friendly</h3>
+                <p className="text-gray-300">Intuitive interface design allows everyone to create professional-quality images without complex operations.</p>
               </div>
               <div className="bg-gradient-to-br from-blue-600/10 to-indigo-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
-                <h3 className="text-xl font-semibold text-white mb-4">持续创新</h3>
-                <p className="text-gray-300">我们不断优化算法和用户体验，为用户提供更好的创作工具和服务支持。</p>
+                <h3 className="text-xl font-semibold text-white mb-4">Continuous Innovation</h3>
+                <p className="text-gray-300">We constantly optimize our algorithms and user experience to provide better creative tools and service support.</p>
               </div>
             </div>
           </section>
