@@ -59,7 +59,7 @@ export default function Home() {
     <main className="min-h-screen p-8 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-white mb-8">
-          AI 图片生成器
+          AI Image Generator
         </h1>
         
         <form onSubmit={handleSubmit} className="mb-8">
@@ -68,7 +68,7 @@ export default function Home() {
               type="text"
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              placeholder="描述你想要生成的图片..."
+              placeholder="Describe the image you want to generate..."
               className="flex-1 p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
@@ -77,7 +77,7 @@ export default function Home() {
               disabled={loading}
               className={`px-8 py-4 rounded-lg font-semibold text-white transition-colors ${loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'}`}
             >
-              {loading ? '生成中...' : '生成图片'}
+              {loading ? 'Generating...' : 'Generate Image'}
             </button>
           </div>
         </form>
@@ -103,7 +103,7 @@ export default function Home() {
               onClick={handleDownload}
               className="w-full py-3 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold transition-colors"
             >
-              下载图片
+              Download Image
             </button>
           </div>
         )}
