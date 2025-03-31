@@ -8,6 +8,7 @@ export default function Home() {
   const [imageUrl, setImageUrl] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [style, setStyle] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,19 +20,19 @@ export default function Home() {
       const response = await fetch('/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt }),
+        body: JSON.stringify({ prompt, style }),
       });
 
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || '生成图片失败');
+        throw new Error(data.error || 'Failed to generate image');
       }
 
       setImageUrl(data.data[0].url);
     } catch (error: unknown) {
-      console.error('图片生成错误:', error);
-      setError(error instanceof Error ? error.message : '生成图片时发生错误');
+      console.error('Image generation error:', error);
+      setError(error instanceof Error ? error.message : 'An error occurred while generating the image');
     } finally {
       setLoading(false);
     }
@@ -51,7 +52,7 @@ export default function Home() {
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
     } catch {
-      setError('下载图片时发生错误');
+      setError('Error downloading the image');
     }
   };
 
@@ -64,14 +65,25 @@ export default function Home() {
         
         <form onSubmit={handleSubmit} className="mb-8">
           <div className="flex gap-4">
-            <input
-              type="text"
-              value={prompt}
-              onChange={(e) => setPrompt(e.target.value)}
-              placeholder="Describe the image you want to generate..."
-              className="flex-1 p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+            <div className="flex-1 flex gap-4">
+              <input
+                type="text"
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
+                placeholder="Describe the image you want to generate..."
+                className="flex-1 p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <select
+                value={style}
+                onChange={(e) => setStyle(e.target.value)}
+                className="p-4 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">no style</option>
+                <option value="vivid">vivid</option>
+                <option value="natural">natural</option>
+              </select>
+            </div>
             <button
               type="submit"
               disabled={loading}
@@ -93,7 +105,7 @@ export default function Home() {
             <div className="relative w-full h-[512px] mb-4">
               <Image
                 src={imageUrl}
-                alt="生成的图片"
+                alt="Generated Image"
                 fill
                 unoptimized
                 className="rounded-lg object-contain"

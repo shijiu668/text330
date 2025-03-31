@@ -10,7 +10,7 @@ const client = new OpenAI({
 
 export async function POST(req: NextRequest) {
   try {
-    const { prompt } = await req.json();
+    const { prompt, style } = await req.json();
 
     if (!prompt) {
       return new Response(JSON.stringify({ error: '请提供图片描述' }), {
@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
       prompt,
       n: 1,
       size: '1024x1024',
+      style: style || undefined,
     });
 
     return new Response(JSON.stringify(response), {
