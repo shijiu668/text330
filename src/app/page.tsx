@@ -157,6 +157,61 @@ export default function Home() {
             <p className="text-gray-300">为品牌营销、产品展示、社交媒体等商业场景提供高效的图片生成解决方案。</p>
           </div>
         </div>
+        <div className="mt-24 space-y-16">
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-8">如何使用</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-br from-indigo-600/10 to-purple-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">输入描述</h3>
+                <p className="text-gray-300">在输入框中详细描述您想要生成的图片内容，可以包含场景、风格、色彩等具体要求。</p>
+              </div>
+              <div className="bg-gradient-to-br from-purple-600/10 to-pink-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">选择风格</h3>
+                <p className="text-gray-300">从下拉菜单中选择合适的图片风格，可以选择自然写实或鲜艳风格，满足不同创作需求。</p>
+              </div>
+              <div className="bg-gradient-to-br from-pink-600/10 to-red-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">一键生成</h3>
+                <p className="text-gray-300">点击生成按钮，AI将根据您的描述快速创作出独特的图片作品，支持下载保存。</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-8">生成效果</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-br from-orange-600/10 to-yellow-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">高清画质</h3>
+                <p className="text-gray-300">生成的图片分辨率高达1024x1024像素，细节清晰，色彩饱满，适合各种使用场景。</p>
+              </div>
+              <div className="bg-gradient-to-br from-yellow-600/10 to-green-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">风格多样</h3>
+                <p className="text-gray-300">支持多种艺术风格，从写实到抽象，从古典到现代，满足不同创作需求。</p>
+              </div>
+              <div className="bg-gradient-to-br from-green-600/10 to-teal-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">快速生成</h3>
+                <p className="text-gray-300">强大的AI引擎确保图片生成速度，让您的创意灵感快速变为现实。</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-white mb-8">为什么选择我们</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-br from-teal-600/10 to-cyan-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">技术领先</h3>
+                <p className="text-gray-300">采用最新的DALL-E 3模型，确保生成图片的质量和创意性始终保持领先水平。</p>
+              </div>
+              <div className="bg-gradient-to-br from-cyan-600/10 to-blue-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">简单易用</h3>
+                <p className="text-gray-300">直观的用户界面设计，无需复杂操作，人人都能轻松创作出专业级图片。</p>
+              </div>
+              <div className="bg-gradient-to-br from-blue-600/10 to-indigo-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-4">持续创新</h3>
+                <p className="text-gray-300">我们不断优化算法和用户体验，为用户提供更好的创作工具和服务支持。</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   );
