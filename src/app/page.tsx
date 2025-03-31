@@ -125,6 +125,38 @@ export default function Home() {
             <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-500"></div>
           </div>
         )}
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="bg-gradient-to-br from-purple-600/10 to-blue-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-4">AI图片生成优势</h3>
+            <p className="text-gray-300">利用先进的AI技术，快速生成高质量图片。无需专业设计技能，也能创作出令人惊叹的视觉作品。</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-pink-600/10 to-purple-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+            <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-lg flex items-center justify-center mb-6">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-4">创意灵感激发</h3>
+            <p className="text-gray-300">突破创意瓶颈，获得无限灵感。AI助手帮助你探索新的视觉可能，激发创作潜能。</p>
+          </div>
+
+          <div className="bg-gradient-to-br from-blue-600/10 to-green-600/10 p-8 rounded-2xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all">
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-green-500 rounded-lg flex items-center justify-center mb-6">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-4">商业应用场景</h3>
+            <p className="text-gray-300">为品牌营销、产品展示、社交媒体等商业场景提供高效的图片生成解决方案。</p>
+          </div>
+        </div>
       </div>
     </main>
   );
