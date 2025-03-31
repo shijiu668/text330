@@ -12,8 +12,15 @@ export async function POST(req: NextRequest) {
   try {
     const { prompt, style } = await req.json();
 
+    // 添加请求参数日志
+    console.log('Received request parameters:', {
+      prompt,
+      style,
+      timestamp: new Date().toISOString(),
+    });
+
     if (!prompt) {
-      return new Response(JSON.stringify({ error: '请提供图片描述' }), {
+      return new Response(JSON.stringify({ error: 'Please provide an image description' }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       });
@@ -27,13 +34,25 @@ export async function POST(req: NextRequest) {
       style: style || undefined,
     });
 
+    // 添加响应日志
+    console.log('API Response:', {
+      success: true,
+      imageUrl: response.data[0]?.url,
+      timestamp: new Date().toISOString(),
+    });
+
     return new Response(JSON.stringify(response), {
       headers: { 'Content-Type': 'application/json' },
     });
   } catch (error) {
-    console.error('图片生成错误:', error);
+    // 添加错误日志
+    console.error('Error details:', {
+      error: error instanceof Error ? error.message : 'Unknown error',
+      timestamp: new Date().toISOString(),
+    });
+
     return new Response(
-      JSON.stringify({ error: '生成图片时发生错误，请稍后重试' }),
+      JSON.stringify({ error: 'An error occurred while generating the image' }),
       {
         status: 500,
         headers: { 'Content-Type': 'application/json' },
