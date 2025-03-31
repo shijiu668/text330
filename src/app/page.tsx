@@ -212,6 +212,9 @@ export default function Home() {
             </div>
           </section>
         </div>
+        <footer className="mt-16 text-center text-gray-400 pb-8">
+          <p>© 2025 AI Image Generator. All rights reserved.</p>
+        </footer>
       </div>
     </main>
   );
